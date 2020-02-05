@@ -5,7 +5,7 @@ small visualization tool built by the design team during Digital Methods Summer 
 
 ## usage
 
-we need a local server in order to open `index.html` and avoid nasty `CORS` errors.
+we need a local server in order to open `index.html` and avoid nasty [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors) errors ([ref](https://stackoverflow.com/a/27986564))
 
 to do that, open a terminal and type
 
@@ -35,7 +35,7 @@ the dataset used by `d3` is set in `d3viz.js`, at line `11`:
 d3.json("fst.json")
 ```
 
-you can change the path to the file (`fst.json`), with another dataset.
+you can change the path to the file (`fst.json`), with another file.
 
 each record in the `json` array *needs* to follow this structure:
 
@@ -55,5 +55,7 @@ each record in the `json` array *needs* to follow this structure:
 },
 ```
 
-you can of course change data structure by changing the `d3viz.js` script, eg by asking d3 to print other keys from the list of records in your dataset json file.
+you can add more records to your dataset, but keeping this data structure.
+
+you can of course change data structure by changing the `d3viz.js` script, eg by asking d3 to print other keys from the list of records in your dataset json file. review the `d3viz.js` by doing a search-query of any key (eg `b_title_statement_t`) you want to change and see where it’s being used in the script. then replace them with the new keys you want to use.
 
