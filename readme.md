@@ -10,7 +10,7 @@ we need a local server in order to open `index.html` and avoid nasty [CORS](http
 to do that, open a terminal and type
 
 ```
-python -m http.server
+python -m http.server OR python -m SimpleHTTPServer
 ```
 
 in the terminal output, you should see
