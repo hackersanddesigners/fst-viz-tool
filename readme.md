@@ -7,10 +7,22 @@ small visualization tool built by the design team during Digital Methods Summer 
 
 we need a local server in order to open `index.html` and avoid nasty [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors) errors ([ref](https://stackoverflow.com/a/27986564))
 
-to do that, open a terminal and type
+to do that, open a terminal and check your python version
 
 ```
-python -m http.server OR python -m SimpleHTTPServer
+python -V
+```
+
+if you have python 3, do
+
+```
+python -m http.server
+```
+
+if you have python (2), do
+
+```
+python -m SimpleHTTPServer
 ```
 
 in the terminal output, you should see
